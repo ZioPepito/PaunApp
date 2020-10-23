@@ -13,4 +13,7 @@ Monitoraggio della posizione dell'utente attraverso GPS per notificare in caso d
 ## Unity
 Il progetto Unity integrato è un progetto di esempio con un semplice cubo che gira. Lo scopo è solo di mostrare come integrare un progetto Unity in un app sviluppata con React Native.
 
-# PaunApp
+# PaunApp dettagli tecnici
+Versione React Native: 0.61.0
+Versione Node: 12.9.1
+Versione npm: 6.10.2
