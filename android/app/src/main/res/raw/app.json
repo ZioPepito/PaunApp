@@ -1,0 +1,9 @@
+{
+  "name": "PaunApp",
+  "displayName": "PaunApp",
+  "auth0": {
+    "domain": "isislab.eu.auth0.com",
+    "clientId": "SSxZ7C3uby52qZrDEtXgUbY5Ayr6PNnB"
+  },
+  "endpoint": "https://postman-echo.com/post"
+}
