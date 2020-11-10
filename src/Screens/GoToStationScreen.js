@@ -8,7 +8,7 @@ import Logo from '.././Ui/Logo';
 
 export default function GoToStationScreen({ navigation }) {
     const id = navigation.getParam('id');
-    const locationId = navigation.getParam('locationId');
+    const locationId = navigation.getParam('locID');
     
     return (
         <ScrollView contentContainerStyle={{ flex: 1 }}>

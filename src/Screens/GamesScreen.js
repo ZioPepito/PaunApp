@@ -29,7 +29,7 @@ export default function GameScreen({ navigation }) {
                 </Text>
                 <View style={{ marginTop: '8%' }}>
                     <Button
-                        title="Unity Sample"
+                        title="Realta' aumentata"
                         onPress={() => navigation.navigate('Unity', { id , ip })}
                     />
                 </View>
@@ -39,10 +39,10 @@ export default function GameScreen({ navigation }) {
                         onPress={
                             async () => {
                                 try {
-                                    startSession(id, 'location1',
+                                    startSession(id, '1',
                                         (gameStates) => {
                                             console.log(gameStates);
-                                            navigation.navigate('GoToStation', { id, locationId: 'location1' })
+                                            navigation.navigate('GoToStation', { id, locID: 1 })
                                         }, (error) => console.log(error))
                                 } catch (error) {
                                     console.log(error);
@@ -61,6 +61,7 @@ export default function GameScreen({ navigation }) {
                             async () => {
                                 try {
                                     await AsyncStorage.removeItem('Nickname');
+                                    await AsyncStorage.removeItem('RegID');
                                 } catch (error) {
                                     console.log(value);
                                 }

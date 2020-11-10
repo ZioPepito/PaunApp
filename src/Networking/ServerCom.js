@@ -184,6 +184,27 @@ export async function getNewSession(locationid, success, error) {
     }, e => error(e));
 }
 
+export async function checkSession(userid, locationid, success, error) {   //function to know if a user has already played with a location
+    if (userid == undefined || userid == null) error(404); 
+    let data = "userid=" + userid;
+    data += "&locationid=" + locationid;
+
+    fetch(URL + '/checksession?' + data, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow'
+    }).then(response => {
+        if (response.status == 200)
+            success();
+        else
+            error(response.status);
+    }, e => error(e));
+}
 
 //admin
 async function getUser(userid, success, error) {

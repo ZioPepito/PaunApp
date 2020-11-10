@@ -33,13 +33,13 @@ const screens = {
             headerShown: false
         }
     },
-    GoToStation: {
+    GoToStation: {             //only for testing purpose
         screen: GoToStationScreen,
         navigationOptions: {
             headerShown: false
         }
     },
-    LeaveStation: {
+    LeaveStation: {            //only for testing purpose
         screen: LeaveStationScreen,
         navigationOptions: {
             headerShown: false

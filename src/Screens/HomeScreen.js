@@ -12,11 +12,8 @@ import useAuthenticationManager from '.././Hooks/useAuthenticationManager';
 import LanguageSelectionPanel from '.././Ui/LanguageSelectionPanel';
 import Logo from '.././Ui/Logo';
 
-import PushNotification from 'react-native-push-notification';
-
 export default function HomeScreen({ navigation }) {
     const [ip, setIp] = useState('');
-    //console.log('IP: ' + ip);
 
     AsyncStorage.getItem('ip')
         .then(ip => {
