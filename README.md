@@ -3,8 +3,8 @@
 L'app è sviluppata utilizzando [React Native](https://facebook.github.io/react-native/)
 
 ## Per iniziare
-Lanciare 'npm install' nella cartella del progetto per scaricare tutti i moduli necessari all'applicazione (la cartella node_modules verrà creata.
-Lanciare 'npx react-native run-android' (oppure run-ios) per eseguire l'app su un dispositivo collegato o su un emulatore attivo.
+Lanciare 'npm install' nella cartella del progetto per scaricare tutti i moduli necessari all'applicazione (la cartella node_modules verrà creata.  
+Lanciare 'npx react-native run-android' (oppure run-ios) per eseguire l'app su un dispositivo collegato o su un emulatore attivo.  
 
 ## Funzionalità
 L'app permette di effettuare il login attraverso social network (Google o Facebbok) oppure come opsite.  
